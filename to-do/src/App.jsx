@@ -2,13 +2,22 @@ import { useState } from "react";
 import "./style.css";
 
 export default function App() {
-  useState();
+  function handleSubmit(event) {
+    event.preventDefault();
+  }
+
+  const [initialState, setNewState] = useState("placeholder text");
   return (
     <>
-      <form className="new-item-form">
+      <form onSubmit={handleSubmit} className="new-item-form">
         <div className="form-row">
           <label htmlFor="item"></label>
-          <input type="text" id="item" />
+          <input
+            value={initialState}
+            onInput={(e) => setNewState(e.target.value)}
+            type="text"
+            id="item"
+          />
         </div>
         <button className="btn">Add</button>
       </form>
