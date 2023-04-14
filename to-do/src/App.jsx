@@ -1,14 +1,10 @@
-import { useState } from "react";
 import "./style.css";
+import NewToDoForm from "./newToDoForm";
 
 export default function App() {
-  function handleSubmit(event) {
-    event.preventDefault();
-  }
-
-  const [initialState, setNewState] = useState("placeholder text");
   return (
     <>
+      <NewToDoForm />
       <h1 className="header">Todo List</h1>
       <ul className="list">
         <li>

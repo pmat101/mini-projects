@@ -1,4 +1,11 @@
+import { useState } from "react";
+
 export default function NewToDoForm() {
+  function handleSubmit(event) {
+    event.preventDefault();
+  }
+  const [initialState, setNewState] = useState("placeholder text");
+
   return (
     <form onSubmit={handleSubmit} className="new-item-form">
       <div className="form-row">
