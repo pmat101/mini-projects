@@ -4,4 +4,4 @@
     - Pricing Panel
     - Museum of Candy
     - ToDo List 2
-    - YelpCamp (mega project)
+    <!-- - YelpCamp (mega project) -->
