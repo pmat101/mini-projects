@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1.	Intro (Node+SQL+React+DSA)
 
 6.	do all exercises and quizzes, don't mindlessly copy do it yourself before or after Colt, take breaks and don't panic.
@@ -7,3 +8,14 @@
 12.	Internet is the infrastructure that enables many things such as streaming services, email and the world wide web (a system to share documents/resources which can be identified by URLs). The web works using HTTP request/response cycle
 
 13.	HTML- noun, CSS- adjective, JavaScript- verb.
+=======
+1.	Intro (Node+SQL+React+DSA)
+
+6.	do all exercises and quizzes, don't mindlessly copy do it yourself before or after Colt, take breaks and don't panic.
+
+7.	Code, resources and slides are available in the 1st lecture of each section.
+
+12.	Internet is the infrastructure that enables many things such as streaming services, email and the world wide web (a system to share documents/resources which can be identified by URLs). The web works using HTTP request/response cycle
+
+13.	HTML- noun, CSS- adjective, JavaScript- verb
+>>>>>>> 4734716948c322e750395539cae3c3df3a1f8e10
