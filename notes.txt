@@ -16,7 +16,7 @@
 ===================================================================================================
 
 
-1.	Intro (Node + SQL + React + DSA + React Native)
+1.	Intro (Node + GIT + SQL + React + DSA + React Native)
 
 6.	do all exercises and quizzes, don't mindlessly copy do it yourself before or after Colt, take breaks and don't panic.
 
