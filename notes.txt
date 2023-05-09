@@ -1,4 +1,22 @@
-1.	Intro (Node+SQL+React+DSA)
+===================================================================================================
+
+                        09/05/2023
+
+        -   WORK [001-056] (no distraction)
+        -   If you feel distracted drink water (<4l) or need a break:
+            #   45min calisthenics + resistance training
+            #   45min yoga + pranayam + cycle
+            #   read 10 pages of self-help book
+            #   cook healthy meals
+            #   skin care
+            #   sketch
+        -   Share 1 progress photo of yourself and the day's work on Insta/Twitter/LinkedIn/YT
+
+===================================================================================================
+===================================================================================================
+
+
+1.	Intro (Node + SQL + React + DSA + React Native)
 
 6.	do all exercises and quizzes, don't mindlessly copy do it yourself before or after Colt, take breaks and don't panic.
 
