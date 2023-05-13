@@ -1,6 +1,7 @@
 ===================================================================================================
 
-                        11/05/2023
+
+                        12/05/2023
 
         -   WORK [001-307] {34} (no distraction)
         -   If you feel distracted drink water (<4l) or take a break:
@@ -12,7 +13,12 @@
             #   sketch
         -   Share 1 progress photo of yourself and the day's work on Insta/Twitter/LinkedIn/YT
 
+
 ===================================================================================================
+
+
+
+
 ===================================================================================================
 
 
@@ -25,3 +31,8 @@
 12.	Internet is the infrastructure that enables many things such as streaming services, email and the world wide web (a system to share documents/resources which can be identified by URLs). The web works using HTTP request/response cycle
 
 13.	HTML- noun, CSS- adjective, JavaScript- verb
+
+14. 
+
+
+===================================================================================================
