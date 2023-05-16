@@ -1,10 +1,9 @@
 ===================================================================================================
 
 
-                        16/05/2023
+                        17/05/2023
 
-        -   WORK [001-307] {34} (no distraction)
-        -   workout/yoga website, personal portfolio website..
+        -   WORK [001-789] {73:52} (no distraction)
         -   If you feel distracted drink water (<4l) or take a break:
             #   45min calisthenics + resistance training
             #   45min yoga + pranayam + cycle
@@ -23,7 +22,7 @@
 ===================================================================================================
 
 
-1.	Intro (Node + Tailwind + GIT + SQL + React + DSA + React Native)
+1.	Home workout website + personal portfolio website + internship projects + ToDo app taught in class + Tailwind + GIT + SQL + DSA + React Native..
 
 6.	do all exercises and quizzes, don't mindlessly copy do it yourself before or after Colt, take breaks and don't panic.
 
