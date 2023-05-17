@@ -1,43 +1,39 @@
 ===================================================================================================
 
 
-                17/05/2023
+                ____    DAILY ROUTINE   ____
 
-        -   WORK [001-101] {09:47} (no distraction)
-        -   If you feel distracted drink water (<4l) or take a break:
-            #   45min calisthenics + resistance training
-            #   45min yoga + pranayam + cycle
-            #   read 10 pages of self-help book
-            #   cook healthy meals
-            #   skin care
-            #   sketch
-        -   Share 1 progress photo of yourself and the day's work on Insta/Twitter/LinkedIn/YT
-
-
-===================================================================================================
-
-
+    -   WORK (no distraction)
+    -   If you feel distracted drink water (<4l) or take a break:
+        #   45min calisthenics + resistance training
+        #   45min yoga + pranayam + cycle
+        #   read 10 pages of self-help book
+        #   cook healthy meals
+        #   skin care
+        #   sketch
+    -   Share 1 progress photo of yourself and the day's work on Insta/Twitter/LinkedIn/YT
 
 
 ===================================================================================================
 
 
-**
-    1 + 2 + 3 + 4 + start freelance + 5 + 6 + 7 + 7.5 + start 75 HARD + 8 + 9 + 10 + 11
-    Home workout website + personal portfolio website + internship projects + ToDo app taught in class + Tailwind + GIT + SQL + DSA + React Native..
-**
+    ~   Gym site + personal portfolio + internship project + ToDo app taught in class + Tailwind/GIT/SQL/DSA/React_Native
+    ~   1 + 2 + 3 + 4 + start freelance + 5 + 6 + 7 + 8 + start 75 HARD + 8 + 9 + 10 + 11
+    ~   11:01 [001-113]
 
-1.  Intro
 
-6.	do all exercises and quizzes, don't mindlessly copy do it yourself before or after Colt, take breaks and don't panic.
+===================================================================================================
+
+
+                ooooxxxx____IMPORTANT NOTES____xxxxoooo
+
+6.	do all exercises and quizzes, don't mindlessly copy do it yourself before Colt, don't panic, take breaks.
 
 7.	Code, resources and slides are available in the 1st lecture of each section.
 
 12.	Internet is the infrastructure that enables many things such as streaming services, email and the world wide web (a system to share documents/resources which can be identified by URLs). The web works using HTTP request/response cycle
 
-13.	HTML- noun, CSS- adjective, JavaScript- verb
-
-14. 
+16. 
 
 
 ===================================================================================================
