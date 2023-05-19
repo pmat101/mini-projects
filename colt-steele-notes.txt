@@ -1,0 +1,7 @@
+1.  
+
+6.  do all exercises and quizzes, don't mindlessly copy do it yourself before Colt, don't panic, take breaks.
+
+7.	Code, resources and slides are available in the 1st lecture of each section.
+
+12.	Internet is the infrastructure that enables many things such as streaming services, email and the world wide web (a system to share documents/resources which can be identified by URLs). The web works using HTTP request/response cycle
