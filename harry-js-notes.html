@@ -15,7 +15,7 @@
         Comparison operator: ==, !=, ===, !==, >, <, >=, <=, ? (ternary operator)
         Logical operator: && (and), || (or), ! (not)
 
-    7.  Pop-Up boxes    => Alert, Confirm, Prompt.
+    7.  Pop-Up boxes    => Alert, Confirm, Prompt   // These depend on browser and can't be modified.
         parseInt and parseFloat used to convert value to number
 
     9.  Types of loops  => For, For-In (run through keys of an object or array), For-Of (iterates through values of arrays or strings), While, Do-While
@@ -33,6 +33,101 @@
     delete - leaves empty space,
     sort - alphabetical; add a function to change comparison method
 
-    19. forEach => runs a function for each array item
-        Array.from => create array from any other object type
+    19. forEach()   => runs a function for each array item
+        Array.from()    => create array from any other object type, eg. strings, objects, HTML collection
+
+    20. map()   =>  runs a function for each array element and returns a new array
+        filter()    => filters array with values that pass a test and returns a new array
+        reduce(sum, current, index, array)    => executes a reducer function on an array and returns a single value
+
+    23. Chrome Dev Tools:
+            Elements- shows all HTML elements,
+            Console- shows all JS warnings n errors,
+            Network- shows all sent requests,
+            Lighthouse- shows improvements to be made
+
+    24. Advantages of using separate script files:  separation of concerns, browser caching
+
+    25. Console object methods: assert, clear, log, table, warn, error, info, time
+
+    28. 'window' (represents browser window) is a global object which provides multiple methods to control it.
+    Document Object Model aka DOM is the HTML page represented as a JS object.
+    Browser Object Model aka BOM is the object representation of the host environment, pop-up boxes are part of BOM
+
+    32. 'childNodes' is a collection, use Array.from() to convert it into an array.
+
+    33.
  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+       const rand = Math.floor(Math.random() * 100);
+       let ip;
+       let count = 0;
+       do {
+         count++;
+         ip = parseInt(prompt("input"));
+         if (ip > rand) console.log("lower");
+         else if (ip < rand) console.log("higher");
+         else {
+           console.log("correct");
+           break;
+         }
+       } while (count < 100);
+       console.log("SCORE: " + (100 - count));
+       */
+
+      /*
+       let age, check;
+       do {
+         age = Number.parseInt(prompt("ENTER YOUR AGE: "));
+         if (age < 0) console.error("ARE YOU A GHOST?!");
+         else {
+           if (age < 18) alert("YOU'RE NOT ALLOWED TO DRIVE..");
+           else alert("YOU'RE ALLOWED TO DRIVE..");
+           check = confirm("WOULD YOU LIKE TO CHECK AGAIN?");
+         }
+       } while (check == true);
+       */
+
+      /*
+      let rand = () => {
+        return Math.floor(Math.random() * 10);
+      };
+      let num = Number.parseInt(prompt("ENTER"));
+      if (num > 4) location.href = "https://google.com/";
+      else document.body.style.backgroundColor = `#${rand()}${rand()}${rand()}`;
+      */
+
+      /*
+      let user = prompt("choose from 'S', 'W', or 'G'");
+      let rand = Math.ceil(Math.random() * 3);
+      if (user == "S") {
+        if (rand == 1) console.log("Computer chose Snake as well, it's a Tie");
+        else if (rand == 2) console.log("Computer chose Water, You Win!");
+        else console.log("Computer chose Gun, You Lose!");
+      }
+      if (user == "W") {
+        if (rand == 1) console.log("Computer chose Snake, You Lose!");
+        else if (rand == 2)
+          console.log("Computer chose Water as well, it's a Tie");
+        else console.log("Computer chose Gun, You Win!");
+      }
+      if (user == "G") {
+        if (rand == 1) console.log("Computer chose Snake, You Win!");
+        else if (rand == 2) console.log("Computer chose Water, You Lose!");
+        else console.log("Computer chose Gun as well, it's a Tie");
+      }
+      */
+    </script>
+  </body>
+</html>
