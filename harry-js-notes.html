@@ -48,7 +48,7 @@
 
     24. Advantages of using separate script files:  separation of concerns, browser caching
 
-    25. Console object methods: assert, clear, log, table, warn, error, info, time
+    25. Console object methods: assert, clear, log, table, warn, error, info, time, dir (shows HTML element as DOM object)
 
     28. 'window' (represents browser window) is a global object which provides multiple methods to control it.
     Document Object Model aka DOM is the HTML page represented as a JS object.
@@ -56,8 +56,39 @@
 
     32. 'childNodes' is a collection, use Array.from() to convert it into an array.
 
-    33.
+    33. '$0' refers to the selected element in the console.
+        Node in DOM can mean anything- comment, blank space etc while Element mean a particular HTML tag
+
+    36. Types of DOM selectors- getElementById, getElementByClassName, getElementByTagname, querySelector, querySelectorAll, getElementsByName (using 'name' attribute)
+
+    41. 'innerHTML' returns content inside given selector, 'outerHTML' returns opening-closing tags as well as content inside.
+        'innerText' only extracts user readable content, whereas 'textContent' can even get <script> n <style> data
+
+    42. Attribute methods:  hasAttribute, getAttribute, setAttribute, removeAttribute, attributes
+
+    43. Insertion methods:  innerHTML, createElement, append, prepend, before, after, replaceWith
+
+    44. insertAdjacent HTML/element/text method drops code in a specified position, some properties of this method are: beforebegin, afterbegin, beforeend, afterend.
+        Use 'remove()' method to delete HTML elements
+
+    45. DOM has some class related methods: classList.add/remove/toggle/contains("class")
+
+    46. 'setTimeOut' runs a function after some interval    => setTimeOut(function_name, delay, args).
+        'setInterval' runs a function repeatedly at given time gap.
+        'clearTimeOut' and 'clearInterval' cancel execution of above methods
+
+    47. Types of browser events:
+            - Mouse Events  => click, mouseover
+            - Keyboard Events   => keyup, keydown
+            - Form Events   => submit, focus
+
+    48. 'addEventListener' can assign one or more handlers to an event.
+        'removeEventListener' must refer to the same function-object for it to work.
+        When an event occurs, the browser creates an 'Event Object' and passes it as the handler's argument with all details- type, target, clientX, clientY etc
+        JavaScript handler overwrites HTML attribute handler
  -->
+
+<!-- PRACTICE SETS -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -68,6 +99,16 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- 
+    <nav>
+      <ul>
+        <li>I</li>
+        <li><3</li>
+        <li>U</li>
+      </ul>
+    </nav>
+     -->
+    <div></div>
     <script>
       /*
        const rand = Math.floor(Math.random() * 100);
@@ -128,6 +169,45 @@
         else console.log("Computer chose Gun as well, it's a Tie");
       }
       */
+
+      /*
+      document.getElementsByTagName("nav")[0].firstElementChild.style.color =
+        "red";
+
+      document.getElementsByTagName("div")[0].firstElementChild.style.color =
+        "green";
+      document.getElementsByTagName("div")[0].lastElementChild.style.color =
+        "green";
+      let z = document.getElementsByTagName("li");
+      for (let i of z) i.style.backgroundColor = "cyan";
+      */
+
+      const jokes = [
+        "Tom",
+        "Dick",
+        "Harry",
+        "Motu",
+        "Patlu",
+        "Banti",
+        "Billa",
+        "Babban",
+        "Oggy",
+        "Cockroaches",
+      ];
+      const rand = Math.floor(Math.random() * 10);
+      document.getElementsByTagName("div")[0].innerHTML = jokes[rand];
     </script>
+    <!-- 
+    <table>
+      <thead>
+        <tr>
+          <th>jvkjv</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>jhvbjd</td>
+      </tr>
+    </table>
+     -->
   </body>
 </html>
