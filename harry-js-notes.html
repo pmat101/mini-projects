@@ -78,14 +78,32 @@
         'clearTimeOut' and 'clearInterval' cancel execution of above methods
 
     47. Types of browser events:
-            - Mouse Events  => click, mouseover
-            - Keyboard Events   => keyup, keydown
-            - Form Events   => submit, focus
+            - Mouse Events  => click, dblclick, mouseover
+            - Keyboard Events   => keyup, keydown, keypress
+            - Form Events   => submit, focus, change
+            - Window Events => resize, load, unload
 
     48. 'addEventListener' can assign one or more handlers to an event.
         'removeEventListener' must refer to the same function-object for it to work.
         When an event occurs, the browser creates an 'Event Object' and passes it as the handler's argument with all details- type, target, clientX, clientY etc
         JavaScript handler overwrites HTML attribute handler
+
+    52. Synchronous actions take initiate and finish one by one, while Asychronous actions initiate immidiately but finish at a later time.
+        When a function is passed onto another function as an argument its called a 'Callback' function.
+        If a function works asynchronously, it must provide a callback argument which will run after its completion.
+        **  error handeling samajh nhi aya  **
+
+    53. When we have callbacks inside callbacks and the nested code grows, it becomes difficult to read and manage, this is called 'Callback Hell' or 'Pyramid of Doom'. We can solve this using 'Promises'
+
+    54. Promises are used to run different commands parallely (asynchronously) ie. multi-tasking, not waiting idle.
+            let x = new Promise( (resolve, reject) => {
+              ...
+            });
+        Resolve & Reject are two callbacks provided by JavaScript, the returned object has two properties- State & Result
+
+    55. We receive the final result of a promise using 'then' and 'catch'
+
+    56.
  -->
 
 <!-- PRACTICE SETS -->
@@ -108,7 +126,32 @@
       </ul>
     </nav>
      -->
-    <div></div>
+
+    <!-- 
+    <table>
+      <thead>
+        <tr>
+          <th>jvkjv</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>jhvbjd</td>
+      </tr>
+    </table>
+     -->
+
+    <!-- 
+    <div>
+      <button>Click Me!</button>
+      <button>Add bookmark</button>
+      <button class="off" style="background-color: #000; color: yellow">
+        Light Bulb!
+      </button>
+    </div>
+     -->
+
+    <div id="clock">CLOCK</div>
+
     <script>
       /*
        const rand = Math.floor(Math.random() * 100);
@@ -182,6 +225,7 @@
       for (let i of z) i.style.backgroundColor = "cyan";
       */
 
+      /*
       const jokes = [
         "Tom",
         "Dick",
@@ -196,18 +240,41 @@
       ];
       const rand = Math.floor(Math.random() * 10);
       document.getElementsByTagName("div")[0].innerHTML = jokes[rand];
+      */
+
+      /*
+      let btn1 = Array.from(document.querySelectorAll("div button"));
+      btn1[0].addEventListener("click", function () {
+        alert("Hello 1!");
+      });
+      btn1[1].addEventListener("click", function () {
+        let bookmark = prompt("Submit link to save");
+        let addLine = document.createElement("p");
+        addLine.innerText = bookmark;
+        document.body.appendChild(addLine);
+      });
+      btn1[2].addEventListener("click", function (e) {
+        let toggler = btn1[2].getAttribute("class");
+        if (toggler == "off") {
+          btn1[2].setAttribute("class", "on");
+          btn1[2].style.backgroundColor = "yellow";
+          btn1[2].style.color = "#000";
+        } else {
+          btn1[2].setAttribute("class", "off");
+          btn1[2].style.backgroundColor = "#000";
+          btn1[2].style.color = "yellow";
+        }
+      });
+      */
+
+      setInterval(function () {
+        const current = new Date();
+        const hrs = current.getHours();
+        const min = current.getMinutes();
+        const sec = current.getSeconds();
+        let pick = document.querySelector("#clock");
+        pick.innerHTML = `${hrs}:${min}:${sec}`;
+      }, 1000);
     </script>
-    <!-- 
-    <table>
-      <thead>
-        <tr>
-          <th>jvkjv</th>
-        </tr>
-      </thead>
-      <tr>
-        <td>jhvbjd</td>
-      </tr>
-    </table>
-     -->
   </body>
 </html>
