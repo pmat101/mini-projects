@@ -99,11 +99,13 @@
             let x = new Promise( (resolve, reject) => {
               ...
             });
-        Resolve & Reject are two callbacks provided by JavaScript, the returned object has two properties- State & Result
+        The returned object has two properties:
+          State-  which can be pending or fulfilled
+          Result- initially pending then changes to a value either Resolve(value) or Reject(error)
 
-    55. We receive the final result of a promise using 'then' and 'catch'
+    55. The value returned by Promise is received using 'then' and 'catch'
 
-    56.
+    56. We can link promises where they can pass values to one another, this is called 'Promise Chaining' and solves the problem of Callback Hell / Pyramid of Doom
  -->
 
 <!-- PRACTICE SETS -->
