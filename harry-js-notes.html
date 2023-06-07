@@ -88,10 +88,11 @@
         When an event occurs, the browser creates an 'Event Object' and passes it as the handler's argument with all details- type, target, clientX, clientY etc
         JavaScript handler overwrites HTML attribute handler
 
+        **********************************************************************************************************************
+
     52. Synchronous actions take initiate and finish one by one, while Asychronous actions initiate immidiately but finish at a later time.
         When a function is passed onto another function as an argument its called a 'Callback' function.
-        If a function works asynchronously, it must provide a callback argument which will run after its completion.
-        **  error handeling samajh nhi aya  **
+        If a function works asynchronously, it must provide a callback argument which will run after its completion
 
     53. When we have callbacks inside callbacks and the nested code grows, it becomes difficult to read and manage, this is called 'Callback Hell' or 'Pyramid of Doom'. We can solve this using 'Promises'
 
@@ -106,6 +107,23 @@
     55. The value returned by Promise is received using 'then' and 'catch'
 
     56. We can link promises where they can pass values to one another, this is called 'Promise Chaining' and solves the problem of Callback Hell / Pyramid of Doom
+
+    57. We can also have multiple handlers (.then / .catch methods) separate from one another but linked to a single Promise
+
+    58. Promise class provides the following methods -  Promise.all, Promise.allSettled, Promise.race, Promise.any, Promise.resolve, Promise.reject
+
+    59. We can turn any function as 'async' with 'await' Promises inside
+
+    60. 'Try...Catch' syntax allows script to run instead of dying due to an error
+
+    61. We can generate custom errors using the 'throw' keyword.
+        Errors have their own properties: name, message & stack
+
+    62. Try...Catch construct may have another clause called 'finally' which runs in all cases (even if there's a return statement in try block)
+
+        **********************************************************************************************************************
+
+    74.
  -->
 
 <!-- PRACTICE SETS -->
