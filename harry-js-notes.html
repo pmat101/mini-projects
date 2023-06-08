@@ -88,7 +88,10 @@
         When an event occurs, the browser creates an 'Event Object' and passes it as the handler's argument with all details- type, target, clientX, clientY etc
         JavaScript handler overwrites HTML attribute handler
 
+
         **********************************************************************************************************************
+
+      ** CALLBACKS, PROMISES, ASYN-AWAIT, ERROR HANDLING, FETCH, COOKIES, LOCAL STORAGE, SESSION STORAGE, IIFE, EVENT LOOP **
 
     52. Synchronous actions take initiate and finish one by one, while Asychronous actions initiate immidiately but finish at a later time.
         When a function is passed onto another function as an argument its called a 'Callback' function.
@@ -123,7 +126,36 @@
 
         **********************************************************************************************************************
 
-    74.
+
+    74. OOPS allow us to create specific objects using pre-defined set of classes.
+        Main features of OOPS:  Encapsulation, Abstraction, Inheritance and Polymorphism
+
+    75. Objects have special property called Prototype which is either null or refers to another object.
+        We can set custom prototype using __proto__, so if we call a method not present in the object it can look for in the prototype
+
+    76. Class works like a template for indevidual objects, 'this' keyword refers to the current object
+
+    77. Constructor() method is called automatially by the 'new' keyword whenever an object is initialised
+
+    78. 'extends' keyword is used by a class to inherit methods and properties of another class (they then become parent n child)
+
+    79. We can override methods from the extended class in the child class, it's called Method Overriding.
+        We can call the original method in parent class even if it's been overridden using the 'super' keyword
+
+    80. If a class extends another class and doesn't have a constructor, an empty one is generated automatically.
+        Constructors in an inherited class must call super() and do so before using 'this'
+
+    81. Static Methods are functions that belong to a class as a whole and not any particular object.
+        To call a static method use class_name.method() and not object_name.method()
+
+    82. 'instanceof' operator checks whether an object belongs to a certain class (or any class it's inherited from)
+        **Getter and Setter remain**
+
+    87. Destructuring is used to unpack values from an array or properties from an object
+        eg. let [x, y, , , ...rest] = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+            =>  x=1; y=2; rest=[5,6,7,8,9]
+
+    89.
  -->
 
 <!-- PRACTICE SETS -->
@@ -287,6 +319,7 @@
       });
       */
 
+      /*
       setInterval(function () {
         const current = new Date();
         const hrs = current.getHours();
@@ -295,6 +328,31 @@
         let pick = document.querySelector("#clock");
         pick.innerHTML = `${hrs}:${min}:${sec}`;
       }, 1000);
+      */
+
+      class Complex {
+        constructor(num) {
+          let real = num % 1;
+          let unreal = num - real;
+        }
+        add(x, y) {
+          return x + y;
+        }
+      }
+
+      class Human {
+        talk() {
+          console.log("HE CAN TALK");
+        }
+      }
+      class Student extends Human {
+        talk() {
+          console.log("HE CAN'T TALK..!!");
+        }
+      }
+      let a = new Student();
+      a.talk();
+      console.log(a instanceof Human);
     </script>
   </body>
 </html>
