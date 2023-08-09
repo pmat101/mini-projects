@@ -21,4 +21,10 @@ button {
   padding: 1rem 2rem;
   font-size: 2rem;
   font-weight: 600;
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: 1px 1px 1px;
+  font-size: 1.9rem;
 }
