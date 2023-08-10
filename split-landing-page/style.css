@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.section {
+  flex: 1;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#ps5 {
+  background-image: url("./ps.jpg");
+}
+
+#ps5:hover {
+  flex: 2;
+}
+
+#xbox {
+  background-image: url("./xbox.jpg");
+}
+
+#xbox:hover {
+  flex: 2;
+}
+
+.text {
+  height: 100%;
+  padding-top: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ps5 .text {
+  background-color: rgba(0, 0, 255, 0.25);
+}
+
+#xbox .text {
+  background-color: rgba(0, 255, 0, 0.25);
+}
+
+button {
+  border: 0.25rem solid #fff;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem 3rem;
+}
