@@ -1,5 +1,8 @@
-## List of Projects
+# List of Projects
 
-    - ToDo React project
+    - ToDo list (React)
+    - Sound Board
+    - Split landing page *transition effect remains*
+    - ToDo list (vanilla JS)
 
 - This repository also contains notes I've accumulated while doing theses projects..
