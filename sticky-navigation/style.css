@@ -1,0 +1,46 @@
+* {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+nav {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+}
+
+nav .links {
+  display: flex;
+  gap: 1rem;
+}
+
+nav .links p:first-child {
+  color: red;
+}
+
+header {
+  background-image: url("https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  color: #000;
+  padding: 2rem 4rem;
+}
