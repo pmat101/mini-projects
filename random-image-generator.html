@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Image Finder</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .catalogue {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .catalogue img {
+        margin: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Random Image Feed</h1>
+    <div class="catalogue"></div>
+
+    <script>
+      const parent = document.querySelector(".catalogue");
+      console.log(parent);
+      const url = "https://source.unsplash.com/";
+
+      for (let i = 0; i < 9; i++) {
+        let img = document.createElement("img");
+        let randNum = Math.floor(Math.random() * 10 + 300);
+        img.setAttribute("src", url + randNum + "x" + randNum);
+        parent.appendChild(img);
+      }
+    </script>
+  </body>
+</html>
