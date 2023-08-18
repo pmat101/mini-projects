@@ -1,0 +1,45 @@
+* {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cdd7e5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+#upper {
+  padding: 4rem;
+}
+
+#questions {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+
+#options {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  width: 100%;
+  background-color: #732d91;
+  color: #fff;
+  border: none;
+  border-radius: 0 0 1rem 1rem;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+}
