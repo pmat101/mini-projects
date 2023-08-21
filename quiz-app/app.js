@@ -33,29 +33,41 @@ const questions = [
   },
 ];
 
-let score = 0;
-let count = 0;
-let answer = 0;
+let count, answer, score;
 
+let form = document.querySelector("form");
 let que = document.getElementById("questions");
 let op1 = document.querySelector("label[for='1']");
 let op2 = document.querySelector("label[for='2']");
 let op3 = document.querySelector("label[for='3']");
 let op4 = document.querySelector("label[for='4']");
+let radios = document.querySelectorAll("input[type='radio']");
 let submit = document.querySelector("input[type='submit']");
+let outer = document.createElement("div");
 
-que.innerText = questions[count].q;
-op1.innerText = questions[count].op1;
-op2.innerText = questions[count].op2;
-op3.innerText = questions[count].op3;
-op4.innerText = questions[count].op4;
+let setup = () => {
+  outer.innerHTML = "";
+  form.style.visibility = "visible";
+  for (let i = 0; i < radios.length; i++) radios[i].checked = false;
+  count = 0;
+  score = 0;
+  que.innerText = questions[count].q;
+  op1.innerText = questions[count].op1;
+  op2.innerText = questions[count].op2;
+  op3.innerText = questions[count].op3;
+  op4.innerText = questions[count].op4;
+};
 
 let selected = (x) => {
   answer = x;
 };
 
-document.querySelector("form").addEventListener("submit", function (e) {
+form.addEventListener("submit", function (e) {
   e.preventDefault();
+  if (answer == questions[count].a) {
+    score++;
+    answer = 0;
+  }
   count++;
   if (count < 4) {
     que.innerText = questions[count].q;
@@ -63,16 +75,19 @@ document.querySelector("form").addEventListener("submit", function (e) {
     op2.innerText = questions[count].op2;
     op3.innerText = questions[count].op3;
     op4.innerText = questions[count].op4;
-    submit.addEventListener("click", function () {
-      if (answer == questions[count].a) {
-        score++;
-        answer = 0;
-      }
-      console.log(count);
-    });
+    for (let i = 0; i < radios.length; i++) radios[i].checked = false;
   } else {
-    // let para = document.createElement("p");
-    // para.innerText = score;
-    document.body.innerHTML = score;
+    form.style.visibility = "hidden";
+    outer.setAttribute("id", "outer");
+    document.body.appendChild(outer);
+    let result = document.createElement("p");
+    result.innerText = `You answered ${score}/4 questions correctly!`;
+    result.setAttribute("id", "upper");
+    outer.appendChild(result);
+    let reload = document.createElement("button");
+    reload.innerText = "Reload";
+    reload.setAttribute("id", "reload");
+    reload.addEventListener("click", setup);
+    outer.appendChild(reload);
   }
 });

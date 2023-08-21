@@ -9,11 +9,13 @@ body {
   background-color: #cdd7e5;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-form {
+form,
+#outer {
   background-color: #fff;
   border-radius: 1rem;
 }
@@ -33,7 +35,8 @@ form {
   line-height: 2rem;
 }
 
-input[type="submit"] {
+input[type="submit"],
+#reload {
   display: inline-block;
   width: 100%;
   background-color: #732d91;
