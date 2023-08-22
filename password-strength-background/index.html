@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Strength Background</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="#">
+      <h1>Change password to see the effect:</h1>
+      <p>Stronger the password clearer the image</p>
+      <label for="mail">Email:</label>
+      <input type="email" name="" id="mail" placeholder="Enter Email" />
+      <label for="pswd">Password:</label>
+      <input
+        type="password"
+        name=""
+        id="pswd"
+        placeholder="Enter Password"
+        oninput="input(value)"
+      />
+      <input type="submit" value="Submit" />
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>
