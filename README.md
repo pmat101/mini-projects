@@ -4,5 +4,10 @@
     - Sound Board
     - Split landing page *transition effect remains*
     - ToDo list (vanilla JS)
+    - Random Image Generator
+    - Sticky Navigation bar
+    - Quiz App
+    - Password Strength Background
+    - Password Generator
 
 - This repository also contains notes I've accumulated while doing theses projects..
