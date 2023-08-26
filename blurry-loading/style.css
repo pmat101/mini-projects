@@ -1,0 +1,28 @@
+* {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+body {
+  height: 100vh;
+}
+body::before {
+  content: "";
+  background-image: url("photo-1614200202465-edf2c6127983.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  filter: blur(100px);
+}
+#loader {
+  text-align: center;
+  padding-top: 20%;
+}
