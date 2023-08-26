@@ -4,20 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blurry Loading</title>
-    \
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="loader"></div>
     <script>
-      let loader = document.querySelector("#loader");
+      const loader = document.querySelector("#loader");
       let count = 0;
-      let blur = 100;
-      document.body.addEventListener("load", function () {
-        for (let i = 0; i <= 100; i++) {
-          loader.innerText = i + "%";
+      let looper = setInterval(function () {
+        loader.innerText = count + "%";
+        document.styleSheets[0].cssRules[2].style.filter = `blur(${
+          100 - count
+        }px)`;
+        if (count > 100) {
+          clearInterval(looper);
+          loader.innerText = "";
         }
-      });
+        count++;
+      }, 100);
     </script>
   </body>
 </html>
