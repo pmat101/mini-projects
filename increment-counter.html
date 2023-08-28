@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Increment Counter</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        outline: 0;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #fff;
+      }
+      body {
+        background-color: #8e44ad;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+      }
+      section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      h2 {
+        font-size: 4rem;
+        font-weight: 200;
+        margin-top: 1rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body onload="start()">
+    <section>
+      <i class="fab fa-twitter fa-3x"></i>
+      <h2></h2>
+      <p>Twitter Followers</p>
+    </section>
+    <section>
+      <i class="fab fa-youtube fa-3x"></i>
+      <h2></h2>
+      <p>YouTube Subscribers</p>
+    </section>
+    <section>
+      <i class="fab fa-facebook fa-3x"></i>
+      <h2></h2>
+      <p>Facebook Fans</p>
+    </section>
+    <script>
+      const first = document.querySelector("section:first-child h2");
+      const second = document.querySelector("section:nth-child(2) h2");
+      const last = document.querySelector("section:nth-child(3) h2");
+      let rtCount = 0;
+      let ytCount = 0;
+      let fbCount = 0;
+      let start = () => {
+        let twitter = setInterval(function () {
+          if (rtCount <= 1200) {
+            first.innerText = rtCount;
+            rtCount++;
+          } else clearInterval(twitter);
+        }, 2);
+        let yt = setInterval(function () {
+          if (ytCount <= 500) {
+            second.innerText = ytCount;
+            ytCount++;
+          } else clearInterval(yt);
+        }, 8);
+        let fb = setInterval(function () {
+          if (fbCount <= 750) {
+            last.innerText = fbCount;
+            fbCount++;
+          } else clearInterval(fb);
+        }, 6);
+      };
+    </script>
+  </body>
+</html>
