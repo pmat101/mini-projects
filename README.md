@@ -9,5 +9,7 @@
     - Quiz App
     - Password Strength Background
     - Password Generator
+    - Blurry Load Screen
+    - Increment Counter
 
 - This repository also contains notes I've accumulated while doing theses projects..
