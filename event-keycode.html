@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event KeyCodes</title>
+    <style>
+      * {
+        outline: 0;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      main {
+        font-size: 1.5rem;
+        font-weight: 600;
+        display: flex;
+        gap: 2rem;
+      }
+      main div {
+        border: 2px solid #888;
+        padding: 1rem 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>Press any key to get the keyCode</div>
+    </main>
+    <script>
+      document.body.addEventListener("keypress", function (event) {
+        document.querySelector("main").innerHTML = "";
+        let eventKey = document.createElement("div");
+        let eventKeyCode = document.createElement("div");
+        let eventCode = document.createElement("div");
+        eventKey.innerText = event.key; //  Get value of key pressed
+        eventKeyCode.innerText = event.key.charCodeAt(0); //  ASCII value
+        eventCode.innerText = event.key.toUpperCase();
+        document.querySelector("main").appendChild(eventKey);
+        document.querySelector("main").appendChild(eventKeyCode);
+        document.querySelector("main").appendChild(eventCode);
+      });
+    </script>
+  </body>
+</html>
