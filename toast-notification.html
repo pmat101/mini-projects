@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toast Notification</title>
+    <style>
+      * {
+        outline: 0;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #663399;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        background-color: #fff;
+        color: #664db0;
+        font-weight: 600;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 1rem 2rem;
+        cursor: pointer;
+      }
+      #popup {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="notify()">Show Notification</button>
+    <div id="popup"></div>
+    <script>
+      const popup = document.querySelector("#popup");
+      let notify = () => {
+        let randNum = Math.floor(Math.random() * 10);
+        const arrNum = [
+          "ONE",
+          "TWO",
+          "THREE",
+          "FOUR",
+          "FIVE",
+          "SIX",
+          "SEVEN",
+          "EIGHT",
+          "NINE",
+          "TEN",
+        ];
+        let col = "#";
+        for (let i = 0; i < 3; i++) {
+          const arr = [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+          ];
+          let randRGB = Math.floor(Math.random() * 16);
+          col += arr[randRGB];
+        }
+        let btn = document.createElement("button");
+        btn.innerText = `Message ${arrNum[randNum]}`;
+        btn.style.color = col;
+        popup.appendChild(btn);
+        let del = setTimeout(function () {
+          btn.remove();
+        }, 3000);
+      };
+    </script>
+  </body>
+</html>
