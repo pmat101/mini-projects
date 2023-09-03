@@ -1,0 +1,33 @@
+* {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #2b88f0;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+h2 {
+  font-weight: 200;
+}
+textarea {
+  padding: 1rem;
+  border: 2px solid #000;
+  outline: 2px solid #fff;
+}
+button {
+  background-color: #f0932b;
+  color: #fff;
+  border: none;
+  border-radius: 4rem;
+  padding: 0.5rem 1rem;
+  margin-right: 2rem;
+}

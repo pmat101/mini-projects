@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Choice Picker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>
+      Enter all of the choices divided by a comma (','). <br />
+      Press enter when you're done
+    </h2>
+    <textarea
+      cols="60"
+      rows="6"
+      onkeypress="enterTheDragon(event, value)"
+      placeholder="Enter Choices Here.."
+    ></textarea>
+    <!-- 'event' refers to the last key pressed, 'value' refers to the entire text -->
+    <div id="buttons"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
