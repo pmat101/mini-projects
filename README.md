@@ -13,4 +13,4 @@
     - Increment Counter
     - Event KeyCode
     - Toast Notifications
-    - Random Choice Picker *work in progress*
+    - Random Choice Picker *finishing touches remain*
